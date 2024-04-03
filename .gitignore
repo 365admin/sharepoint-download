@@ -1,0 +1,6 @@
+sessions
+workdir
+.DS_Store
+.env
+*.pfx
+*.xl*
