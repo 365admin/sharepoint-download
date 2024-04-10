@@ -8,6 +8,8 @@
   "appname": "sharepoint-download",
   "dnsprod": "download.home.nexi-intra.com",
   "dnstest": "test.download.home.nexi-intra.com",
+  "apidnsprod": "api.download.home.nexi-intra.com",
+  "apidnstest": "test.api.download.home.nexi-intra.com",
   "imagename": "ghcr.io/365admin/sharepoint-download",
   "port": 4336
 }
