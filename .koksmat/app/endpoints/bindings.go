@@ -21,6 +21,11 @@ func AddEndpoints(s *web.Service, jwtAuth func(http.Handler) http.Handler) {
 			//r.Method(http.MethodPost, "/", nethttp.NewHandler(ExchangeCreateRoomsPost()))
 			r.Method(http.MethodPost, "/health/ping", nethttp.NewHandler(HealthPingPost()))
 			r.Method(http.MethodPost, "/health/coreversion", nethttp.NewHandler(HealthCoreversionPost()))
+			r.Method(http.MethodPost, "/download/onefile", nethttp.NewHandler(DownloadOnefilePost()))
+			r.Method(http.MethodPost, "/provision/appdeployproduction", nethttp.NewHandler(ProvisionAppdeployproductionPost()))
+			r.Method(http.MethodPost, "/provision/webdeployproduction", nethttp.NewHandler(ProvisionWebdeployproductionPost()))
+			r.Method(http.MethodPost, "/provision/webdeploytest", nethttp.NewHandler(ProvisionWebdeploytestPost()))
+			r.Method(http.MethodPost, "/sandbox/download", nethttp.NewHandler(SandboxDownloadPost()))
 
 		})
 	})

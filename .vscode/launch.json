@@ -11,7 +11,7 @@
             "mode": "auto",
             "cwd": "${workspaceFolder}/.koksmat/app",
             "program": "${workspaceFolder}/.koksmat/app",
-            "args": ["health","ping","pong"]
+            "args": ["serve"]
         }, 
 
         {

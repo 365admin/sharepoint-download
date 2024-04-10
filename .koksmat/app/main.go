@@ -22,7 +22,7 @@ description: Describe the main purpose of this kitchen
 # sharepoint-download
 `
 	magicapp.Setup(".env")
-	magicapp.RegisterServeCmd("sharepoint-download", description, "0.0.1", 8080)
+	magicapp.RegisterServeCmd("sharepoint-download", description, "0.0.1", 8336)
 	magicapp.RegisterCmds()
 	magicapp.RootCmd.PersistentFlags().BoolVarP(&utils.Verbose, "verbose", "v", false, "verbose output")
 
