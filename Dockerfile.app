@@ -15,6 +15,8 @@ WORKDIR /kitchens
 COPY ./.koksmat/kitchenroot .
 WORKDIR /kitchens/sharepoint-download
 COPY . .  
+WORKDIR /kitchens/sharepoint-download/.koksmat
+RUN mkdir workdir
 WORKDIR /kitchens/sharepoint-download/.koksmat/app
 
 RUN go install
