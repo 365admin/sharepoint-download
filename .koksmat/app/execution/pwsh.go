@@ -20,6 +20,7 @@ func ExecutePowerShell(authentication string, authorization string, kitchen stri
 	// name := s1[len(s1)-1]
 	cmd1 := exec.Command("koksmat", "kitchen", "script", "setup", scriptname, "--kitchen", kitchen, "--station", station)
 	sessionPath, err := cmd1.CombinedOutput()
+	log.Println("ExecutePowerShell:", "koksmat", "kitchen", "script", "setup", scriptname, "--kitchen", kitchen, "--station", station, sessionPath)
 	if err != nil {
 
 		return "", errors.New("could not run powershell script")

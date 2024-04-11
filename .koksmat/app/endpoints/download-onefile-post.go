@@ -33,8 +33,9 @@ func DownloadOnefilePost() usecase.Interactor {
 			log.Println(inputErr)
 			return errors.New("error 100: cannot download")
 		}
-
-		inputErr = os.WriteFile(path.Join(utils.WorkDir("sharepoint-download"), "download-request.json"), body, 0644)
+		inputFilePath := path.Join(utils.WorkDir("sharepoint-download"), "download-request.json")
+		log.Println("DownloadOnefilePost: inputFilePath", inputFilePath)
+		inputErr = os.WriteFile(inputFilePath, body, 0644)
 		if inputErr != nil {
 			log.Println(inputErr)
 			return errors.New("error 101: cannot download")

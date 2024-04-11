@@ -1,9 +1,9 @@
 {
   "version": {
     "minor": 0,
-    "build": 1,
+    "build": 3,
     "major": 0,
-    "patch": 1
+    "patch": 3
   },
   "appname": "sharepoint-download",
   "dnsprod": "download.home.nexi-intra.com",
